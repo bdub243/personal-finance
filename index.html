@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watson Personal Finance</title>
+    <meta name="description" content="A personal budgeting app used only by its developer to track their own accounts. Data stays on the developer's own computer and is never shared or sold." />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="icon-1024.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <img src="icon.svg" alt="" />
+        <div>
+          <div class="name">Watson Personal Finance</div>
+          <div class="sub">A personal budgeting app</div>
+        </div>
+      </header>
+
+      <main>
+        <h1>One person's money, kept on one computer</h1>
+        <p class="lead">
+          Watson Personal Finance is a budgeting app built and used by one person to keep track of their own accounts. It isn't offered to the public: there are
+          no sign-ups and no other users.
+        </p>
+
+        <div class="facts">
+          <div><strong>One user</strong>Only its developer uses it, for their own accounts.</div>
+          <div><strong>Stays at home</strong>Data is kept only on the developer's own computer, encrypted.</div>
+          <div><strong>Never shared or sold</strong>No ads, no analytics, no data brokers.</div>
+        </div>
+
+        <h2>What it does</h2>
+        <ul>
+          <li>Shows balances for checking, savings, credit card, loan and investment accounts in one place.</li>
+          <li>Sorts transactions into categories and tracks spending against a monthly budget.</li>
+          <li>Lists upcoming bills and card payments, and tracks net worth and investments over time.</li>
+        </ul>
+
+        <h2>How it connects to banks</h2>
+        <p>
+          The app connects to banks through <a href="https://plaid.com/how-we-handle-data/">Plaid</a>. The developer signs in to their bank inside Plaid's own
+          window and chooses which accounts to share; the app never sees bank usernames or passwords. It reads balances, transactions, credit card and loan
+          details, and investment holdings, and only uses them to show the developer their own finances. Any bank can be disconnected at any time, which ends
+          the app's access straight away.
+        </p>
+
+        <div class="card">
+          <h2>Privacy policy</h2>
+          <p>What the app collects, where it's kept, who can see it, and how it's deleted.</p>
+          <a class="button" href="privacy.html">Read the privacy policy</a>
+        </div>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this app or its privacy policy: <a href="https://github.com/bdub243/personal-finance/issues">open an issue on GitHub</a>.
+        </p>
+      </main>
+
+      <footer>
+        Watson Personal Finance is a personal project. It isn't a bank, and isn't affiliated with Plaid or with any bank. ·
+        <a href="privacy.html">Privacy policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
