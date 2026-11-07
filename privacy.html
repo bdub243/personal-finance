@@ -37,6 +37,10 @@
           </li>
           <li><strong>Entered by the developer:</strong> accounts and holdings typed in by hand, imported files, categories, budgets, goals and notes.</li>
           <li>
+            <strong>About signing in:</strong> the public key of each passkey (never the passkey itself, or any face, fingerprint or PIN), signed-in sessions,
+            and a log of sign-ins and sensitive actions.
+          </li>
+          <li>
             <strong>Not collected:</strong> bank usernames and passwords. Those are typed into Plaid's own window and never reach the app. The app has no
             analytics, ads or trackers.
           </li>
@@ -60,8 +64,8 @@
 
         <h2>Who can see it</h2>
         <p>
-          Only the developer. The app isn't on the internet: it runs only on the developer's computer and doesn't accept connections from any other device. The
-          data isn't shared, sold or rented to anyone. It leaves that computer only as requests to Plaid for the developer's own accounts, and as encrypted
+          Only the developer. Every page and action in the app needs the developer to be signed in with a passkey. The app isn't on the internet: it runs only
+          on the developer's computer and doesn't accept connections from any other device. The data isn't shared, sold or rented to anyone. It leaves that computer only as requests to Plaid for the developer's own accounts, and as encrypted
           backups to cloud storage the developer chooses.
         </p>
 
@@ -85,10 +89,18 @@
             backup within 12 months.
           </li>
           <li>Temporary copies made before an app update are deleted automatically after 30 days.</li>
+          <li>Sign-in records: ended sessions are deleted after 30 days, and the log of sign-ins and sensitive actions after 400 days.</li>
         </ul>
 
         <h2>Security</h2>
         <ul>
+          <li>
+            Signing in to the app takes a passkey: Windows Hello (face, fingerprint or PIN), a phone or a security key. There are no passwords to steal or reuse.
+          </li>
+          <li>
+            Sessions end after 30 minutes without activity and after 12 hours at most. Connecting a bank and other sensitive actions ask for the passkey again.
+          </li>
+          <li>Who has access is reviewed every 90 days, and any access given to someone else ends by itself on a set date.</li>
           <li>The computer's drive is encrypted, it has antivirus and automatic updates, and only the developer can sign in to it.</li>
           <li>A security check runs every month: drive encryption, antivirus, system updates, and known problems in the app's software.</li>
           <li>Security problems in the app's software are fixed on a set schedule: critical ones within 7 days.</li>
